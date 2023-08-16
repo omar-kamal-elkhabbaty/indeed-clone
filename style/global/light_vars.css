@@ -1,0 +1,23 @@
+:root{
+    --bg: #e6e6e6;
+    
+    --sec-color: #FFF;
+    
+    --blue-color: #043785;
+    
+    --btn-color: #555555;
+    
+    --border-color:#e4e2e0;
+    
+    --font-color: #000;
+    
+    --input-color: #FFF;
+
+    --footer-bg: #031431;
+
+    --job-title: #0a66c2;
+
+    --small-span: rgba(0,0,0,0.6);
+
+    --active-job: #e2f0fe;
+}

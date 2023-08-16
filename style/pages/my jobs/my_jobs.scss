@@ -1,0 +1,256 @@
+//vars;
+$bg: var(--bg);
+
+$sec-color: var(--sec-color);
+
+$blue-color: var(--blue-color);
+
+$btn-color: var(--btn-color);
+
+$border-color: var(--border-color);
+
+$font-color: var(--font-color);
+
+$input-color: var(--input-color);
+
+$job-title: var(--job-title);
+
+$small-span: var(--small-span);
+
+$active-job: var(--active-job);
+
+// ==== Elements style
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+//children
+    .jobs_stats, .my_jobs_cont {
+        background-color: $sec-color;
+        border: 1px solid $border-color;
+        border-radius: 10px;
+    }
+
+    .jobs_stats {
+        width: 20%;
+        align-self: flex-start;
+    // children
+        h1{
+            color: $job-title;
+            font-size: 16px;
+            font-weight: 600;
+            border-bottom: 1px solid $border-color;
+            margin-bottom: 0;
+            i{
+                margin-right: 10px;
+                font-size: 14px;
+            }
+        }
+
+        .my_jobs_num, .all_jobs_num{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $font-color;
+        }
+
+        .my_jobs_num {
+            border-bottom: 1px solid $border-color;
+            border-left: 5px solid $blue-color;
+        }
+
+        h2{
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+    }
+
+    .my_jobs_cont{
+        width: 73%;
+        align-self: flex-start;
+    //children
+        h2, .job_item{
+            border-bottom: 1px solid $border-color;
+        }
+        .job_item:last-of-type{
+            border-bottom: none;
+        }
+
+        h2{
+            color: $font-color;
+            font-size: 25px;
+        }
+
+        .job_item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: $font-color;
+            cursor: pointer;
+
+            .job_info {
+                width: 91%;
+
+                h3{
+                    font-size: 23px;
+                    font-weight: 600;
+                    color: $job-title;
+                }
+
+                h4{
+                    font-size: 16px;
+                }
+
+                .location{
+                    color: $small-span;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .no_items {
+            display: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            > div{
+                color: $font-color;
+            }
+        }
+
+    }
+
+}
+
+.job__details{
+    display: none;
+    width: 100%;
+    background-color: $sec-color;
+    border: 1px solid $border-color;
+    border-left: none;
+    overflow-y: auto;
+    color: $font-color;
+// children 
+    .job__details__header{
+        margin-bottom: 30px;
+        border-bottom: 1px solid $border-color;
+        position: relative;
+        h3{
+            color: $font-color;
+            font-size: 25px;
+            font-weight: 700;
+        }
+        h4{
+            font-size: 14px;
+            color: $font-color;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        div span{
+            font-size: 14px;
+            color: $small-span
+        }
+        div span.remote{
+            color: $font-color
+        }
+        a{
+            color: #FFF;
+            background-color: $blue-color;
+        }
+        i{  
+            position: absolute;
+            top: -10%;
+            right: 3%;
+            font-size: 25px;
+            color: $font-color;
+            cursor: pointer;
+            &:hover{
+                color: $blue-color
+            }
+        }
+        .saved{
+            color: $blue-color;
+        }
+        .back{
+            position: absolute;
+            left: 3%;
+            top: -12%;
+        }
+    }
+
+    p{
+        font-size: 14px;
+    }
+    strong{
+        font-size: 17px;
+    }
+    h2{
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 991px){
+    section {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 400;
+    }
+
+    main{
+        flex-direction: column;
+        height: auto;
+        margin-top: 60px;
+
+        .jobs_stats, .my_jobs_cont{
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        .my_jobs_cont .job_item{   
+            .job_info {
+                width: 89.5%;
+
+                h3{
+                    font-size: 23px;
+                }
+
+                h4{
+                    font-size: 16px;
+                }
+
+                .location{
+                    color: $small-span;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    .job__details{
+        margin-top: 55px;
+    }
+}
+
+@media (max-width: 576px) {
+    main .my_jobs_cont .job_item{   
+        .job_info {
+            width: 82%;
+
+            h3{
+                font-size: 20px;
+            }
+
+            h4{
+                font-size: 15px;
+            }
+
+            .location{
+                color: $small-span;
+                font-size: 12px;
+            }
+        }
+    }
+
+}

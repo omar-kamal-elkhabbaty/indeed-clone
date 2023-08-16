@@ -1,0 +1,82 @@
+@import 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700&display=swap';
+* {
+  font-family: "Noto Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+.loading-page {
+  display: none;
+}
+
+.load-body {
+  background-color: var(--bg);
+}
+.load-body div.loading-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: 1000000;
+}
+.load-body div.loading-page .loader {
+  width: 150px;
+  height: 3px;
+  background-color: var(--border-color);
+  margin-left: 15px;
+}
+.load-body div.loading-page .loader-move {
+  width: 30%;
+  height: 100%;
+  background-color: var(--blue-color);
+  animation: horizontal_loader 0.8s linear infinite alternate;
+}
+.load-body div.loading-page img {
+  height: 100px;
+}
+.load-body > * {
+  display: none;
+}
+
+@keyframes horizontal_loader {
+  from {
+    transform: translateX(105px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.blur-body {
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--sec-color);
+  border: 1px solid var(--border-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: #6c757d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #41464b;
+}/*# sourceMappingURL=global.css.map */

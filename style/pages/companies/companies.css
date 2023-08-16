@@ -1,0 +1,71 @@
+main.companies_cont {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(2, 1fr);
+}
+main.companies_cont > div.company {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 110px;
+  background-color: var(--sec-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+main.companies_cont > div.company .company_info {
+  width: 88%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main.companies_cont > div.company .company_info div:first-of-type {
+  width: 75%;
+  color: var(--font-color);
+}
+main.companies_cont > div.company .company_info div.rates {
+  color: var(--font-color);
+}
+main.companies_cont > div.company .company_info div.rates i {
+  font-size: 0.5rem;
+}
+main.companies_cont h2 {
+  font-size: 17px;
+  color: var(--job-title);
+  font-weight: 600;
+}
+main.companies_cont .jobs_num {
+  font-size: 13px;
+}
+
+@media (max-width: 1100px) {
+  section.nav-sec-active {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 900;
+  }
+  main.companies_cont {
+    margin-top: 60px;
+    grid-template-columns: 1fr;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  main.companies_cont > div.company .company_info {
+    width: 90%;
+  }
+  main.companies_cont > div.company .company_info div:first-of-type {
+    width: 85%;
+  }
+}
+@media (max-width: 715px) {
+  main.companies_cont {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  main.companies_cont > div.company .company_info {
+    width: 82%;
+  }
+  main.companies_cont > div.company .company_info div:first-of-type {
+    width: 72%;
+  }
+}/*# sourceMappingURL=companies.css.map */

@@ -1,0 +1,196 @@
+@import '../../global/global.scss';
+
+//vars;
+
+$sec-color: var(--sec-color);
+
+$blue-color: var(--blue-color);
+
+$btn-color: var(--btn-color);
+
+$border-color: var(--border-color);
+
+$font-color: var(--font-color);
+
+$input-color: var(--input-color);
+
+section{
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 900;
+}
+
+.jobs__search{
+    position: relative;
+    height: 100vh;
+    animation: animated_bg 12s cubic-bezier(1,-0.04,.74,.98) infinite alternate;
+// children
+    > div{
+        width: 75%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    h1{
+        color: #FFF;
+    }
+    .search-container{
+        background-color: $sec-color;
+        justify-content: space-between;
+        border-radius: 20px;
+    }
+    .search-bar-cont, .location-inp-cont{
+        position: relative;
+    }
+    label{
+        color: $font-color;
+        font-weight: 600;
+    }
+    .location-cont, .search-cont{
+        position: relative;
+    }
+    select, input,  #location-inp{
+        position: relative;
+        width: 100%;
+        border-radius: 5px;
+        padding: 10px;
+        outline: none;
+        background-color: $input-color;
+        color: $font-color;
+        border: 1px solid $btn-color;
+        &:focus{
+            box-shadow: 0 3px 2px $blue-color;
+        }
+    }
+
+    .location-suggest, .search-suggest{
+        width: 100%;
+        max-height: 220px;
+        overflow-y: auto;
+        border-radius: 5px;
+        position: absolute;
+        left: 0;
+        background-color: $input-color;
+        z-index: 200;
+    // children
+        li{
+            border-bottom: 1px solid $border-color;
+            color: $font-color;
+        }
+        display: none;
+    }
+
+    .search-bar-cont .fa-circle-xmark,  .search-container .fa-circle-xmark,
+    .search-bar-cont .fa-magnifying-glass,  .search-container .fa-location-dot {
+        position: absolute;
+        color: $font-color;
+        cursor: pointer;
+    }
+
+    .search-bar-cont .fa-magnifying-glass,  .search-container .fa-location-dot{
+        left: 20px;
+        top: 58%;
+        font-size: 20px;
+    }
+    .search-bar-cont .fa-circle-xmark,  .location-inp-cont .fa-circle-xmark{
+        top: 62%;
+        right: 30px;
+        font-size: 17px;
+        display: none;
+    } 
+
+
+    button.btn{
+        align-self: flex-end;
+        background-color: $blue-color;
+        color: #FFF;
+        padding: 10px;
+        &:hover{
+            background-color: rgb(8, 8, 110);
+        }
+    }
+}
+
+.stats{
+    background-color: $sec-color;
+// children
+    .stats-item{
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        color: $font-color;
+    // children
+        i{
+            font-size: 25px;
+        }
+        h4{
+            font-size: 18px;
+            color: $blue-color;
+            font-weight: 600;
+            font-style: italic;
+        }
+        strong{
+            font-weight: 600;
+        }
+    }
+}
+
+// ==== search results
+div.job__details__mobile{
+    display: block;
+    width: 100%;
+}
+
+// animated bg
+@keyframes animated_bg{
+    0%{
+        background: url('../../../images/find-jobs\ \(5\).jpg') no-repeat;
+        background-size: cover;
+        background-color: rgba($color: #000, $alpha: 0.67);
+        background-blend-mode: darken;
+        background-attachment: fixed;
+    }
+    50%{
+        background: url('../../../images/find-jobs\ \(4\).jpg') no-repeat;
+        background-size: cover;
+        background-color: rgba($color: #000, $alpha: 0.67);
+        background-blend-mode: darken;
+        background-attachment: fixed;
+    }
+    100%{
+        background: url('../../../images/find-jobs\ \(2\).jpg') no-repeat;
+        background-size: cover;
+        background-color: rgba($color: #000, $alpha: 0.67);
+        background-blend-mode: darken;
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 991px) {
+    .jobs__search > div{
+        width: 95%;
+    }
+    .search-container{
+        flex-direction: column;
+    }
+    .jobs__search div.search-bar-cont, .location-inp-cont, .btn  {
+        padding: {
+            left: 0;
+            right: 0;
+        };
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .stats .stats-item:not(.stats-item:last-of-type){
+        margin-bottom: 40px;
+    }
+}

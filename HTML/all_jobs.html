@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is indeed clone for testing">
+    <meta name="keywords" content="indeed, HTML, CSS, JS, JAVASCRIPT, frontend developer, web developer, sass, bootstrap">
+    <meta name="author" content="OMAR KAMAL">
+    <script src="https://kit.fontawesome.com/b97736e1cd.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.css">
+    <script src="../bootstrap/bootstrap.js"></script>
+    <link rel="stylesheet" href="../fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="stylesheet" href="../style/global/dark_vars.css" path-dir="../" id="theme-file">
+    <link rel="stylesheet" href="../style/global/navbar.css">
+    <link rel="stylesheet" href="../style/global/global.css">
+    <link rel="stylesheet" href="../style/global/footer.css">
+    <link rel="stylesheet" href="../style/pages/all_jobs/all_jobs.css">
+    <title>All jobs | indeed-clone</title>
+  </head>
+  <body>
+  <!--loading page-->
+    <div class="loading-page">
+      <img src="../images/logo-dark.png" path-dir="../" alt="logo">
+      <div class="loader">
+        <div class="loader-move"></div>
+      </div>
+    </div>
+  <!--Navbar-->
+    <section class="nav-sec-active">
+      <nav class="container-xxl px-3 pt-2">
+
+        <div class="col row">
+
+          <a href="../index.html" class="col-2"><img src='../images/logo-dark.png' path-dir="../" alt="indeed-logo" class="logo"></a>
+
+          <ul class="list-unstyled col-5">
+            <li><a href="../index.html" class="text-decoration-none">Find jobs</a></li>
+            <li><a href="companies.html" class="text-decoration-none">Companies</a></li>
+            <li class="active"><a href="all_jobs.html" class="text-decoration-none">All jobs</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-2 row">
+          <i id="theme-ico" class="fa-solid col fa-sun"></i>
+          <a href="my_jobs.html" class="col text-decoration-none bookmark"><i class="fa-solid col fa-bookmark"></i></a>
+          <!--list__icon__mobile-->
+          <i class="fa-solid col fa-bars"></i>
+        </div>
+      </nav>
+    </section>
+  <!--Mobile-list -->
+    <div class="mobile-list p-3 d-none">
+      <i class="fa-solid fa-xmark"></i>
+      <ul>
+        <li class="row py-3 my-3"><a href="../index.html" class="text-decoration-none col-10">Find jobs</a><i class="fa-solid fa-angle-right col"></i>
+        </li>
+        <li class="row py-3 my-3"><a href="companies.html" class="text-decoration-none col-10">Companies</a><i class="fa-solid fa-angle-right col"></i>
+        </li>
+        <li class="row py-3 my-3"><a href="my_jobs.html" class="text-decoration-none col-10">My jobs</a><i class="fa-solid fa-angle-right col"></i>
+        </li>
+
+        <li class="row py-3 my-3"><a href="all_jobs.html" class="text-decoration-none col-10">All jobs</a><i class="fa-solid fa-angle-right col"></i>
+        </li>
+
+        <li class="row py-3 my-3"><a href="#" class="text-decoration-none col-10">Salaries</a><i class="fa-solid fa-angle-right col"></i>
+        </li>
+        <li class="row py-3 my-3"><a href="#" class="text-decoration-none col-10">My Resume</a><i class="fa-solid fa-angle-right col"></i>
+        </li>
+      </ul>
+      <img src="../images/logo-dark.png" path-dir="../" alt="menu-logo" class="logo-menu">
+    </div>
+  <!--main content-->
+    <main class="container-xxl pt-5 mb-5">
+
+      <div class="jobs">
+      <!--jobs header-->
+        <div class="jobs__header p-2 px-3" id="jobs_header">
+          <h1>All jobs in Germany</h1>
+          <span>100 Result</span>
+        </div>
+      <!--jobs--> 
+        <div class="jobs__cont"></div>
+
+        <div class="jobs__pagination mt-3">
+          <ul class="list-unstyled">
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="job__details p-4 pt-5"></div>
+    </main>
+  <!--footer-->
+    <footer>
+      <div class="container-lg row px-3 py-5 mx-auto footer-cont ">
+        <div class="footer-logo col-lg-3"><img src="../images/logo-dark.png" alt='logo'></div>
+
+        <div class="footer-links col-lg-7">
+          <ul class="list-unstyled row">
+            <li class="col-md-4"><a href="../index.html" class="text-decoration-none">Find jobs</a></li>
+            <li class="col-md-4"><a href="companies.html" class="text-decoration-none">Companies</a></li>
+            <li class="col-md-4"><a href="#" class="text-decoration-none">Salaries</a></li>
+            <li class="col-md-4"><a href="my_jobs.html" class="text-decoration-none">My jobs</a></li>
+            <li class="col-md-4"><a href="all_jobs.html" class="text-decoration-none">See All jobs</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg footer-social">
+          <a href="https://www.linkedin.com/in/omar-kamal-a76303250/" target="_blank" class="text-decoration-none"><i class="fa-brands fa-linkedin"></i></a>
+
+          <a href="https://github.com/omar-kamal-elkhabbaty" target="_blank" class="text-decoration-none"><i class="fa-brands fa-github"></i></a>
+
+          <a href="mailto:omar.muhammed.kamal@gmail.com" target="_blank" class="text-decoration-none"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="../javascript/main.js"></script>
+    <script src="../javascript/all_jobs.js"></script>
+  </body>
+</html>

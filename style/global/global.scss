@@ -1,0 +1,106 @@
+@import 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700&display=swap';
+//vars;
+$bg: var(--bg);
+
+$sec-color: var(--sec-color);
+
+$blue-color: var(--blue-color);
+
+$btn-color: var(--btn-color);
+
+$border-color: var(--border-color);
+
+$font-color: var(--font-color);
+
+$input-color: var(--input-color);
+
+$job-title: var(--job-title);
+
+$small-span: var(--small-span);
+
+
+*{
+    font-family: 'Noto Sans', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--bg);
+}
+// ===== loading page =====
+.loading-page{
+    display: none;
+}
+
+.load-body {
+    background-color: var(--bg);
+    // children{
+    div.loading-page{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        inset: 0;
+        z-index: 1000000;
+        // children
+        .loader{
+            width: 150px;
+            height: 3px;
+            background-color: var(--border-color);
+            margin-left: 15px;
+        }
+        .loader-move{
+            width: 30%;
+            height: 100%;
+            background-color: var(--blue-color);
+            animation: horizontal_loader 0.8s linear infinite alternate;
+        }
+        img{
+            height: 100px;
+        }
+    }
+    & > * {
+        display: none;
+    }
+}
+
+@keyframes horizontal_loader{
+    from{
+        transform: translateX(calc(150px * 0.70));
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+// ==== blur body (mobile-list-active) ====
+
+.blur-body{
+    position: relative;
+}
+
+// ==== custom scroll bar
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $sec-color; 
+    border: 1px solid $border-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #6c757d; 
+}
+
+    /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #41464b; 
+}

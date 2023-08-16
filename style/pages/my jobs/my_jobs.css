@@ -1,0 +1,197 @@
+main {
+  display: flex;
+  justify-content: space-evenly;
+}
+main .jobs_stats, main .my_jobs_cont {
+  background-color: var(--sec-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+main .jobs_stats {
+  width: 20%;
+  align-self: flex-start;
+}
+main .jobs_stats h1 {
+  color: var(--job-title);
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 0;
+}
+main .jobs_stats h1 i {
+  margin-right: 10px;
+  font-size: 14px;
+}
+main .jobs_stats .my_jobs_num, main .jobs_stats .all_jobs_num {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--font-color);
+}
+main .jobs_stats .my_jobs_num {
+  border-bottom: 1px solid var(--border-color);
+  border-left: 5px solid var(--blue-color);
+}
+main .jobs_stats h2 {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+main .my_jobs_cont {
+  width: 73%;
+  align-self: flex-start;
+}
+main .my_jobs_cont h2, main .my_jobs_cont .job_item {
+  border-bottom: 1px solid var(--border-color);
+}
+main .my_jobs_cont .job_item:last-of-type {
+  border-bottom: none;
+}
+main .my_jobs_cont h2 {
+  color: var(--font-color);
+  font-size: 25px;
+}
+main .my_jobs_cont .job_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--font-color);
+  cursor: pointer;
+}
+main .my_jobs_cont .job_item .job_info {
+  width: 91%;
+}
+main .my_jobs_cont .job_item .job_info h3 {
+  font-size: 23px;
+  font-weight: 600;
+  color: var(--job-title);
+}
+main .my_jobs_cont .job_item .job_info h4 {
+  font-size: 16px;
+}
+main .my_jobs_cont .job_item .job_info .location {
+  color: var(--small-span);
+  font-size: 14px;
+}
+main .my_jobs_cont .no_items {
+  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .my_jobs_cont .no_items > div {
+  color: var(--font-color);
+}
+
+.job__details {
+  display: none;
+  width: 100%;
+  background-color: var(--sec-color);
+  border: 1px solid var(--border-color);
+  border-left: none;
+  overflow-y: auto;
+  color: var(--font-color);
+}
+.job__details .job__details__header {
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+}
+.job__details .job__details__header h3 {
+  color: var(--font-color);
+  font-size: 25px;
+  font-weight: 700;
+}
+.job__details .job__details__header h4 {
+  font-size: 14px;
+  color: var(--font-color);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.job__details .job__details__header div span {
+  font-size: 14px;
+  color: var(--small-span);
+}
+.job__details .job__details__header div span.remote {
+  color: var(--font-color);
+}
+.job__details .job__details__header a {
+  color: #FFF;
+  background-color: var(--blue-color);
+}
+.job__details .job__details__header i {
+  position: absolute;
+  top: -10%;
+  right: 3%;
+  font-size: 25px;
+  color: var(--font-color);
+  cursor: pointer;
+}
+.job__details .job__details__header i:hover {
+  color: var(--blue-color);
+}
+.job__details .job__details__header .saved {
+  color: var(--blue-color);
+}
+.job__details .job__details__header .back {
+  position: absolute;
+  left: 3%;
+  top: -12%;
+}
+.job__details p {
+  font-size: 14px;
+}
+.job__details strong {
+  font-size: 17px;
+}
+.job__details h2 {
+  font-size: 23px;
+}
+
+@media (max-width: 991px) {
+  section {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 400;
+  }
+  main {
+    flex-direction: column;
+    height: auto;
+    margin-top: 60px;
+  }
+  main .jobs_stats, main .my_jobs_cont {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  main .my_jobs_cont .job_item .job_info {
+    width: 89.5%;
+  }
+  main .my_jobs_cont .job_item .job_info h3 {
+    font-size: 23px;
+  }
+  main .my_jobs_cont .job_item .job_info h4 {
+    font-size: 16px;
+  }
+  main .my_jobs_cont .job_item .job_info .location {
+    color: var(--small-span);
+    font-size: 13px;
+  }
+  .job__details {
+    margin-top: 55px;
+  }
+}
+@media (max-width: 576px) {
+  main .my_jobs_cont .job_item .job_info {
+    width: 82%;
+  }
+  main .my_jobs_cont .job_item .job_info h3 {
+    font-size: 20px;
+  }
+  main .my_jobs_cont .job_item .job_info h4 {
+    font-size: 15px;
+  }
+  main .my_jobs_cont .job_item .job_info .location {
+    color: var(--small-span);
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=my_jobs.css.map */
