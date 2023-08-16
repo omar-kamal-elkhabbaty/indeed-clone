@@ -85,17 +85,13 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 Please ensure that your code follows the existing code style and conventions.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Acknowledgments
 
 This project is inspired by the popular job search website Indeed. Special thanks to the Bootstrap and SCSS communities for their excellent tools and resources.
 
 ## Contact
 
-If you have any questions, issues, or suggestions regarding this project, please feel free to contact the project maintainer at [your-email@example.com](mailto:your-email@example.com).
+If you have any questions, issues, or suggestions regarding this project, please feel free to contact the project maintainer at (mailto:omar.muhammed.kamal@gmail.com).
 
 Happy coding!
 
