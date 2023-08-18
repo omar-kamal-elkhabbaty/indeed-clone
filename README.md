@@ -16,7 +16,7 @@ This is an Indeed clone website built with pure JavaScript, utilizing Bootstrap 
 - fetching API
 - dynamic website
 - transfer data between pages
--  
+- save data in local storage
 
 ## Technologies Used
 
@@ -25,6 +25,7 @@ This is an Indeed clone website built with pure JavaScript, utilizing Bootstrap 
 - JavaScript: Implements the website's functionality.
 - Bootstrap: A CSS framework used for responsive design and layout.
 - SCSS: A CSS preprocessor that enhances the styling capabilities of CSS.
+- API: The Data that are used in the project
 
 ## Getting Started
 
@@ -33,7 +34,7 @@ To set up the project locally, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/indeed-clone.git
+git clone https://github.com/omar-kamal-elkhabbaty/indeed-clone.git
 ```
 
 2. Navigate to the project directory:
@@ -50,20 +51,33 @@ The project structure is as follows:
 
 ```
 indeed-clone/
-├── css/
-│   ├── main.css
-│   └── main.scss
-├── img/
+├── style/
+│   ├── global
+│   └── pages
+├── bootstrap/
+│   ├── bootstrap.css
+│   └── bootstrap.js
+├── images/
 │   └── ...
-├── js/
+├── javascript/
 │   └── main.js
+    └── search_page.js
+    └── companies.js
+    └── my_jobs.js
+├── HTML/
+│   └── all_jobs.html
+    └── companies.html
+    └── my_jobs.html
+  
 ├── index.html
 └── README.md
+
 ```
 
-- `css/`: Contains the compiled CSS files.
-- `img/`: Contains images used in the website.
-- `js/`: Contains the JavaScript files.
+- `style/`: Contains the compiled CSS files.
+- `image/`: Contains images used in the website.
+- `javascript/`: Contains the JavaScript files.
+- `bootstrap/`: Contains the Bootstrap files.
 - `index.html`: The main HTML file that serves as the entry point of the website.
 - `README.md`: This file, providing information about the project.
 
