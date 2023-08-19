@@ -61,14 +61,14 @@ indeed-clone/
 │   └── ...
 ├── javascript/
 │   └── main.js
-    └── search_page.js
-    └── companies.js
-    └── my_jobs.js
+│   └── search_page.js
+│    └── companies.js
+│    └── my_jobs.js
 ├── HTML/
 │   └── all_jobs.html
-    └── companies.html
-    └── my_jobs.html
-  
+│    └── companies.html
+│    └── my_jobs.html
+│ 
 ├── index.html
 └── README.md
 
