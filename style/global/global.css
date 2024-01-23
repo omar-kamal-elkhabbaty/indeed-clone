@@ -61,7 +61,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 7px;
 }
 
 /* Track */
@@ -72,11 +72,11 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  border-radius: 20px;
+  border-radius: 0px;
   background: #6c757d;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #41464b;
+  background: #a6abb1;
 }/*# sourceMappingURL=global.css.map */

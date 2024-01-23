@@ -154,7 +154,7 @@ nav div.col-2 a {
   text-align: center;
 }
 nav div.col-2 > i:hover, nav a.bookmark i:hover {
-  color: var(--blue-color);
+  color: rgb(19,180,172);
 }
 nav i#theme-ico {
   text-align: end;
