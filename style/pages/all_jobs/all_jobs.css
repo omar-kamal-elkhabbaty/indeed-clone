@@ -20,21 +20,51 @@ main, .search_results {
 .no_results a:hover {
   color: var(--blue-color);
 }
+/* CSS for the search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: none;
+  padding: 10px 20px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#search-bar,
+#location-inp {
+  border: none;
+  border-radius: 0px;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.search_btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+/* Additional styling as needed */
+
 
 .jobs {
-  width: 35%;
+  width: 50%;
   background-color: var(--sec-color);
   overflow-y: auto;
-  border: 1px solid var(--border-color);
+  border: none;
+  border-radius: 0px;
   border-right: none;
 }
 .jobs .jobs__header {
-  background-color: var(--blue-color);
+  background-color: rgb(19,180,172);
   color: #FFF;
 }
 .jobs .jobs__header h1 {
   font-size: 19px;
-  font-weight: 500;
+  font-weight: 300;
 }
 .jobs .jobs__header span {
   font-size: 13px;
@@ -43,6 +73,7 @@ main, .search_results {
   margin-bottom: 0;
   cursor: pointer;
   border-bottom: 1px solid var(--border-color);
+  border-radius: 0px;
 }
 .jobs .job > div {
   display: flex;
@@ -52,11 +83,11 @@ main, .search_results {
   width: 16%;
 }
 .jobs .job > div .job_title {
-  width: 80%;
+  width: 60%;
 }
 .jobs .job > div .job_title h3 {
-  color: var(--job-title);
-  font-size: 22px;
+  color: rgb(19,180,172);
+  font-size: 20px;
   font-weight: 700;
   word-wrap: break-word;
 }
@@ -106,7 +137,7 @@ main, .search_results {
   color: var(--font-color);
 }
 .back_to_search a:hover {
-  color: var(--blue-color);
+  color: var rgb(19,180,172);
 }
 
 .job-active {
@@ -183,6 +214,127 @@ main, .search_results {
 }
 .job__details h2 {
   font-size: 23px;
+}
+
+/* jobs style */
+.jobs {
+  width: 70%; /* width */
+  background-color: #fff; /* white bg-color */
+  border: 1px solid #e0e0e0; /* light border */
+  border-radius: 5px; /* radius */
+  margin: 20px auto; /* center */
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* light shadow */
+}
+
+/* forEach(Job) Style */
+.job {
+  margin-bottom: 20px; /* margin */
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Animation */
+}
+
+.job:hover {
+  background-color: #f8f8f8; 
+}
+
+.job h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.job h4 {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.job .location {
+  font-size: 14px;
+  color: #999;
+  margin-top: 10px;
+}
+
+.jobs__pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.job .apply-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0073e6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.job .apply-button:hover {
+  background-color: #0059b3;
+}
+
+.job__details {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.job__details h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.job__details h4 {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.job__details .location {
+  font-size: 16px;
+  color: #999;
+  margin-bottom: 15px;
+}
+
+.job__details .apply-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0073e6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.job__details .apply-button:hover {
+  background-color: #0059b3;
+}
+
+.job__details .back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ddd;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.job__details .back-button:hover {
+  background-color: #c0c0c0;
 }
 
 div.job__details__mobile {

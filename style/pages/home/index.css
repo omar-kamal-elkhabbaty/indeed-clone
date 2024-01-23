@@ -168,12 +168,12 @@ section {
 }
 .jobs__search button.btn {
   align-self: flex-end;
-  background-color: var(--blue-color);
+  background-color: rgb(19,180,180);
   color: #FFF;
   padding: 10px;
 }
 .jobs__search button.btn:hover {
-  background-color: rgb(8, 8, 110);
+  background-color: rgb(19,180,172);
 }
 
 .stats {
@@ -205,29 +205,25 @@ div.job__details__mobile {
   width: 100%;
 }
 
+
+.jobs__search {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(120deg, var(--blue-color), var(--sec-color), var(--bg));
+  background-size: 400% 400%;
+  animation: animated_bg 7s cubic-bezier(0.25, 0.1, 0.25, 1) infinite alternate;
+}
+
 @keyframes animated_bg {
   0% {
-    background: url("../../../images/find-jobs (5).jpg") no-repeat;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.67);
-    background-blend-mode: darken;
-    background-attachment: fixed;
+    background-position: 0% 0%;
   }
   50% {
-    background: url("../../../images/find-jobs (4).jpg") no-repeat;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.67);
-    background-blend-mode: darken;
-    background-attachment: fixed;
+    background-position: 20% 30%;
   }
-  100% {
-    background: url("../../../images/find-jobs (2).jpg") no-repeat;
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.67);
-    background-blend-mode: darken;
-    background-attachment: fixed;
-  }
+ 
 }
+
 @media (max-width: 991px) {
   .jobs__search > div {
     width: 95%;

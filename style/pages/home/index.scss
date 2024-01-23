@@ -42,7 +42,7 @@ section{
     .search-container{
         background-color: $sec-color;
         justify-content: space-between;
-        border-radius: 20px;
+        border-radius: 0px;
     }
     .search-bar-cont, .location-inp-cont{
         position: relative;
@@ -107,7 +107,7 @@ section{
 
     button.btn{
         align-self: flex-end;
-        background-color: $blue-color;
+        background-color: rgb(19,180,172);
         color: #FFF;
         padding: 10px;
         &:hover{
@@ -148,30 +148,7 @@ div.job__details__mobile{
     width: 100%;
 }
 
-// animated bg
-@keyframes animated_bg{
-    0%{
-        background: url('../../../images/find-jobs\ \(5\).jpg') no-repeat;
-        background-size: cover;
-        background-color: rgba($color: #000, $alpha: 0.67);
-        background-blend-mode: darken;
-        background-attachment: fixed;
-    }
-    50%{
-        background: url('../../../images/find-jobs\ \(4\).jpg') no-repeat;
-        background-size: cover;
-        background-color: rgba($color: #000, $alpha: 0.67);
-        background-blend-mode: darken;
-        background-attachment: fixed;
-    }
-    100%{
-        background: url('../../../images/find-jobs\ \(2\).jpg') no-repeat;
-        background-size: cover;
-        background-color: rgba($color: #000, $alpha: 0.67);
-        background-blend-mode: darken;
-        background-attachment: fixed;
-    }
-}
+
 
 @media (max-width: 991px) {
     .jobs__search > div{

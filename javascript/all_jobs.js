@@ -119,6 +119,7 @@ req.then((res) => res.json())
             });
         });
 
+        
         //items functions
         const jobs_items = document.querySelectorAll(".job");
         // active job onload
@@ -178,7 +179,7 @@ req.then((res) => res.json())
                 <span>${data[el].location}</span>
                 <span class="remote">${remote_or_site()}</span>
             </div>
-            <a href="${data[el].url}" target="_blank" class="btn text-decoration-none px-4">Apply Now</a>
+            <a href="${data[el].url}" target="_blank" class="btn style="color:rgb(19,180,172);" px-4">Apply Now</a>
             <i class="fa-solid col fa-bookmark saved-ico"></i>
             <div class="back">
                 <i class="fa-solid fa-arrow-left"></i>

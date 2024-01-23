@@ -5,7 +5,7 @@ main {
 main .jobs_stats, main .my_jobs_cont {
   background-color: var(--sec-color);
   border: 1px solid var(--border-color);
-  border-radius: 10px;
+  border-radius: 0px;
 }
 main .jobs_stats {
   width: 20%;
@@ -63,7 +63,7 @@ main .my_jobs_cont .job_item .job_info {
 main .my_jobs_cont .job_item .job_info h3 {
   font-size: 23px;
   font-weight: 600;
-  color: var(--job-title);
+  color: rgb(19,180,172);
 }
 main .my_jobs_cont .job_item .job_info h4 {
   font-size: 16px;
